@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/test?serverTimezone=Asia/Kuala_Lumpur
+        </property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.autocommit">false</property>
+        <property name="hibernate.connection.isolation">2</property>
+        <property name="hibernate.c3p0.validate">true</property>
+        <property name="hibernate.use-new-id-generator-mappings">false</property>
+        <property name="use_sql_comments">false</property>
+        <property name="format_sql">true</property>
+        <property name="show_sql">false</property>
+        <property name="hbm2ddl.auto">validate</property>
+
+        <mapping class="com.privasia.jpa.Employee"/>
+    </session-factory>
+</hibernate-configuration>
